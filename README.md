@@ -7,5 +7,5 @@
 
 - Họ tên: Hoàng Tiến Đạt
 - Mã sinh viên: B23DCCE015
-- Trường: Học viện Công nghệ Bưu chính Viễn thông (PTIT)
-- Giảng viên hướng dẫn: TS. Kim Ngọc Bách
+- Học viện Công nghệ Bưu chính Viễn thông (PTIT)
+
