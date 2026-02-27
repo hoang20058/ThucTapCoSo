@@ -1,7 +1,7 @@
 # Dapp Password Manager 
 ## 📌 Giới thiệu
 
-Đây là dự án thực tập cơ sở với mục tiêu xây dựng một ứng dụng quản lý mật khẩu phi tập trung tích hợp cơ chế đánh giá độ mạnh mật khẩu
+Đây là dự án thiết kế và xây dựng ứng dụng quản lý mật khẩu bảo mật dựa trên cơ chế mã hóa phía máy khách và xác thực blockchain. Ngoài ra có tích hợp thêm công cụ đánh giá độ mạnh của mật khẩu.
 
 ## 👨‍🎓 Thông tin sinh viên
 
