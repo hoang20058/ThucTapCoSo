@@ -1,0 +1,39 @@
+{
+  "name": "exercise2_wp",
+  "version": "2.0.0",
+  "description": "Password Manager Vault - React + Tailwind CSS",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "compile": "hardhat compile",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "export:abi": "node scripts/exportAbi.js VaultPointer",
+    "faucet": "node server/faucet.js",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@zxcvbn-ts/core": "^3.0.4",
+    "@zxcvbn-ts/language-common": "^3.0.4",
+    "ethers": "^6.16.0",
+    "firebase": "^12.15.0",
+    "lucide-react": "^1.8.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-router-dom": "^7.14.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@vitejs/plugin-react": "^6.0.1",
+    "autoprefixer": "^10.4.27",
+    "dotenv": "^16.0.0",
+    "hardhat": "^2.28.6",
+    "postcss": "^8.5.9",
+    "tailwindcss": "^3.4.17",
+    "vite": "^8.0.8"
+  }
+}

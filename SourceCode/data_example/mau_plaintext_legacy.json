@@ -1,0 +1,17 @@
+[
+  {
+    "url": "facebook.com",
+    "username": "hoangdat2005",
+    "password": "FbPassword123!"
+  },
+  {
+    "url": "google.com",
+    "username": "dat.hoang@gmail.com",
+    "password": "GoogleSecurePass99#"
+  },
+  {
+    "url": "github.com",
+    "username": "datdev2005",
+    "password": "GitStrongPassword88*"
+  }
+]

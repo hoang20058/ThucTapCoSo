@@ -1,0 +1,15 @@
+{
+  "format": "vault-ciphertext-v1",
+  "kdf": {
+    "algorithm": "PBKDF2-SHA256",
+    "iterations": 310000,
+    "salt": "kar/Av3Mc9RgSfY/m8bE5w=="
+  },
+  "cipher": {
+    "version": 1,
+    "algorithm": "AES-256-GCM",
+    "payloadType": "json",
+    "iv": "qTJuD2qsaMu0RtF5",
+    "cipherText": "8k3uEtxu9WpIUzyWb1jcJ/MZCtPxksF7qmaFVSSQVGBeZ8CR3kZzposZjWucpTpzpVDmPP/S3Xu7vz91eQt8ruYqo63oi6Ub9VPszbrK7t+i2mFe/WW/XaNo4OiOn2aT4zKLXabvCWkNPP2U6pD0XW/ytPWT8ttK7zqjLv6beHjPlwJJb+ODdIwsfLo4Z523fg6lvxfsLTTid1K20UVg9E0in5dfvrcqsqg0NpJkR4O7lSmva7qwM7jaTlecYrWHwEINGRtwys9JpK4k6YuHhSzroeNB6JIuskoR8zshmYWKkUUdaWDowxLPuvJbDWE6kdGo9pQN97KS43I05EO3463/gl5h+AI2Bk44k1y0cbL1LlBEGjafMzAMLn0+EpAPSul7BHtxbQOVRO/BNpgRp7DxEbGc7x1BACDbSLitQu0m8CgzQWD2T8Jv6tAcJd3+CIPtc05Vy2tUYDBp+jE2YWriCYxhTXSGnosLQdDWulnx4m3cHCWvqvhQ2E4VLOLV2OOABC5v5V33CXfKZSIkC8aOKAsfzEJ7MIQ33a2XtAA+z/VKKtypGkhkwLazFmqmrgmBth78LP6TqUpJGDTxE6m4y4HtQRZwCaJivNABx4EkzQ=="
+  }
+}

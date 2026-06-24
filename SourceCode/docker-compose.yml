@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  # Service chạy Frontend React Client (Vite)
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dapp_password_manager_frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - NODE_ENV=development
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run dev -- --host
+    depends_on:
+      - faucet
+    restart: always
+
+  # Service chạy JIT Gas Station Faucet Server (Node.js API)
+  faucet:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dapp_password_manager_faucet
+    ports:
+      - "3001:3001"
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run faucet
+    restart: always

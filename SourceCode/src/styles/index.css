@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Geist:wght@500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap");
+@import "./tokens.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    @apply border-app-border;
+  }
+
+  body {
+    @apply bg-app-bg text-app-text font-sans antialiased;
+    min-height: 100vh;
+    background-image:
+      radial-gradient(circle at 12% 0%, rgb(var(--color-primary) / 0.10), transparent 32rem),
+      radial-gradient(circle at 88% 12%, rgb(var(--color-danger) / 0.06), transparent 30rem),
+      linear-gradient(180deg, rgb(var(--color-bg)), rgb(var(--color-bg)));
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    @apply bg-app-primary text-app-primary-contrast;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-2xl border border-app-border/80 bg-app-surface/95 shadow-card backdrop-blur transition-all duration-200 ease-premium;
+  }
+
+  .panel-elevated {
+    @apply rounded-2xl border border-app-border/90 bg-app-surface shadow-modal transition-all duration-200 ease-premium;
+  }
+
+  .btn-primary {
+    @apply inline-flex min-h-10 items-center justify-center gap-2 rounded-xl bg-app-primary px-4 py-2.5 text-sm font-semibold text-app-primary-contrast shadow-glow transition-all duration-200 ease-premium hover:-translate-y-0.5 hover:bg-app-primary-hover active:translate-y-0 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-focus focus-visible:ring-offset-2 focus-visible:ring-offset-app-bg disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .btn-soft {
+    @apply inline-flex min-h-10 items-center justify-center gap-2 rounded-xl border border-app-border bg-app-surface-alt px-4 py-2.5 text-sm font-semibold text-app-text shadow-sm transition-all duration-200 ease-premium hover:-translate-y-0.5 hover:border-app-primary/45 hover:bg-app-surface active:translate-y-0 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-focus focus-visible:ring-offset-2 focus-visible:ring-offset-app-bg disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .btn-danger {
+    @apply inline-flex min-h-10 items-center justify-center gap-2 rounded-xl border border-rose-500/30 bg-rose-500/10 px-4 py-2.5 text-sm font-semibold text-rose-600 transition-all duration-200 ease-premium hover:-translate-y-0.5 hover:bg-rose-500/15 active:translate-y-0 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-400 focus-visible:ring-offset-2 focus-visible:ring-offset-app-bg disabled:pointer-events-none disabled:opacity-50 dark:text-rose-300;
+  }
+
+  .icon-button {
+    @apply inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-app-border bg-app-surface-alt text-app-muted shadow-sm transition-all duration-200 ease-premium hover:-translate-y-0.5 hover:border-app-primary/45 hover:bg-app-surface hover:text-app-text active:translate-y-0 active:scale-[0.96] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-app-focus focus-visible:ring-offset-2 focus-visible:ring-offset-app-bg disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .field {
+    @apply min-h-11 w-full rounded-xl border border-app-border bg-app-surface px-3.5 py-2.5 text-sm text-app-text outline-none transition-all duration-200 ease-premium placeholder:text-app-muted/70 hover:border-app-muted/60 focus:border-app-primary focus:ring-2 focus:ring-app-focus/25 disabled:cursor-not-allowed disabled:bg-app-surface-alt disabled:opacity-70;
+  }
+
+  .skeleton {
+    @apply relative overflow-hidden rounded-xl bg-app-surface-alt;
+  }
+
+  .skeleton::after {
+    @apply absolute inset-0 -translate-x-full animate-shimmer;
+    content: "";
+    background: linear-gradient(90deg, transparent, rgb(var(--color-text) / 0.08), transparent);
+  }
+}
